@@ -1,0 +1,16 @@
+Privacy Policy
+
+Privacy Policy
+This extension is committed to respecting users' privacy. It does not collect, share or store your personal information.
+
+Data Collected
+This extension ensures that only user preferences such as the selected currency (USD or EUR) and update frequency are stored in Chrome local storage. This data is used to personalize the user experience and is not accessed when the extension is closed or removed by the user.
+
+Third Party Services
+This extension uses the Coingecko API to retrieve Bitcoin prices only. The use of the API is only to retrieve pricing information and does not include personal information.
+
+Changes
+This privacy policy may be updated as necessary. The changes will be published on the extension page in the Chrome Web Store.
+
+Contact Us
+If you have any questions, you can contact the developer of the extension.
