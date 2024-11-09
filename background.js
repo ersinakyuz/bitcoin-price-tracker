@@ -30,27 +30,27 @@ function formatPrice(price) {
   }
   
   function updateInterval(newInterval) {
-    // Mevcut alarmı iptal et ve yeni interval ile oluştur
+    // Cancel the current alarm and create a new interval
     chrome.alarms.clear("updatePrice", () => {
       chrome.alarms.create("updatePrice", { periodInMinutes: newInterval });
     });
   }
   
-  // İlk başlatmada güncellemeyi ayarla
+  // Set update on first startup
   chrome.storage.sync.get("interval", (data) => {
     const interval = data.interval || 5; // Varsayılan interval 5 dakika
     updateInterval(interval);
     fetchBitcoinPrice();
   });
   
-  // Alarm tetiklendiğinde fiyatı güncelle
+  // Update price when alarm is triggered
   chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === "updatePrice") {
       fetchBitcoinPrice();
     }
   });
   
-  // popup.js'den gelen mesajları dinle
+  // listen to messages from popup.js
   chrome.runtime.onMessage.addListener((message) => {
     if (message.action === "updatePrice") {
       fetchBitcoinPrice();

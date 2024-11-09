@@ -1,0 +1,11 @@
+{
+    "bitcoinPrice": {
+        "message": "Bitcoin Fiyatı"
+    },
+    "currentPrice": {
+        "message": "Güncel BTC Fiyatı:"
+    },
+    "currency": {
+        "message": "Para Birimi:"
+    }
+}

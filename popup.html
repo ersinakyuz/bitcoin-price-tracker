@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    /* Modern style for the main container */
+    .popup-container {
+        border-radius: 15px; /* Rounded corners */
+        overflow: hidden; /* Prevents overflow at the corners */
+        padding: 20px;
+        width: 240px;
+        font-family: 'Tahoma', sans-serif;
+        background-color: #f4f4f9; /* Light background for a clean look */
+        text-align: left;
+    }
+
+    /* Header style */
+    h1 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    /* Text and label style */
+    p, label {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0;
+    }
+
+    /* Price display style */
+    #price {
+        font-weight: bold;
+        color: #ff9900; 
+    }
+
+    /* Dropdown (select) style */
+    select {
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: #333;
+        width: 100%;
+        box-sizing: border-box;
+    }
+</style>
+
   <title>Bitcoin Price Tracker Options</title>
 </head>
-<body>
-  <h3>Currency</h3>
+
+
+<body class="popup-container">
+  <h3 data-i18n="currency">Currency</h3>
   <input type="radio" id="usd" name="currency" value="USD">
   <label for="usd">USD</label>
   <input type="radio" id="eur" name="currency" value="EUR">
   <label for="eur">EUR</label>
 
-  <h3>Update Interval (Minutes)</h3>
+  <h3 data-i18n="updateInterval">Update Interval (Minutes)</h3>
   <select id="interval">
     <option value="1">1 min</option>
     <option value="5">5 min</option>
