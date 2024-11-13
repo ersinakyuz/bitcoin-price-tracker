@@ -1,0 +1,14 @@
+{
+    "bitcoinPrice": {
+        "message": "बिटकॉइन मूल्य"
+    },
+    "currentPrice": {
+        "message": "वर्तमान BTC मूल्य:"
+    },
+    "currency": {
+        "message": "मुद्रा:"
+    },
+    "updateInterval": {
+        "message": "अद्यतन अंतराल (सेकंड):"
+    }
+}

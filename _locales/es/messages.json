@@ -1,0 +1,14 @@
+{
+    "bitcoinPrice": {
+        "message": "Precio de Bitcoin"
+    },
+    "currentPrice": {
+        "message": "Precio actual de BTC:"
+    },
+    "currency": {
+        "message": "Moneda:"
+    },
+    "updateInterval": {
+        "message": "Intervalo de actualización (segundos):"
+    }
+}

@@ -14,6 +14,9 @@ https://github.com/ersinakyuz/bitcoin-price-tracker
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [1.2.3] - 2024-11-09
+### Changed.
+- Added localization support for Spanish (ES), Russian (RU), and Hindi (HI).
 
 ## [1.2.1] - 2024-11-09
 ### Changed
