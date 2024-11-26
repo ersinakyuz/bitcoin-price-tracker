@@ -14,6 +14,10 @@ https://github.com/ersinakyuz/bitcoin-price-tracker
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [1.2.4] - 2024-11-09
+### Changed.
+- Added NSFW mode for public environments. (Change icon to CPU symbol when NSFW mode is enabled)
+
 ## [1.2.3] - 2024-11-09
 ### Changed.
 - Added localization support for Spanish (ES), Russian (RU), and Hindi (HI).
@@ -30,6 +34,7 @@ All notable changes to this project will be documented in this file.
 
 
 ## TODO
-- Add NSFW (Boss Mode) feature:
-  - Change icon to CPU symbol when NSFW mode is enabled.
-  - Update title to display "CPU Utilization" instead of "Bitcoin Price" in NSFW mode.
+
+- OS level notifications
+- Support for different crypto currencies 
+- Balance calculation

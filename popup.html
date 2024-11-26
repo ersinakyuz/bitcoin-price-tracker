@@ -7,12 +7,19 @@
         border-radius: 15px; /* Rounded corners */
         overflow: hidden; /* Prevents overflow at the corners */
         padding: 20px;
-        width: 240px;
+        width: 260px;
         font-family: 'Tahoma', sans-serif;
         background-color: #f4f4f9; /* Light background for a clean look */
         text-align: left;
     }
 
+    .notify-toggle input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        margin-top: 5px;
+
+  }
     /* Header style */
     h1 {
         font-size: 18px;
@@ -65,6 +72,19 @@
     <option value="10">10 min</option>
     <option value="30">30 min</option>
   </select>
+<!--
+  <div class="notify-toggle">
+    <input type="checkbox" id="notifyToggle">
+    <label for="notifyToggle" data-i18n="notifyToggle" >Enable Notifications</label>
+  </div>
+-->
+  <p>
+    <label>
+      <input type="checkbox" id="nsfwMode" /> Enable NSFW (Boss Mode)
+    </label>
+  </p>
+
+
 </body>
 <script src="popup.js"></script>
 </html>

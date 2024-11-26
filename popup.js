@@ -25,3 +25,32 @@ function localizeHtmlPage() {
 
 // Call the function to localize the popup
 localizeHtmlPage();
+
+
+// NSFW Mode
+document.getElementById('nsfwMode').addEventListener('change', function () {
+  const nsfwEnabled = this.checked;
+  chrome.storage.sync.set({ nsfwMode: nsfwEnabled }, function () {
+      console.log('NSFW mode is now', nsfwEnabled ? 'enabled' : 'disabled');
+  });
+});
+
+// Load option state when page loads
+window.addEventListener('load', function () {
+  chrome.storage.sync.get('nsfwMode', function (data) {
+      document.getElementById('nsfwMode').checked = data.nsfwMode || false;
+  });
+});
+
+
+// Change popup title
+window.addEventListener('load', function () {
+  chrome.storage.sync.get('nsfwMode', function (data) {
+      if (data.nsfwMode) {
+          document.getElementById('title').textContent = 'CPU Utilization';
+      } else {
+          document.getElementById('title').textContent = 'Bitcoin Price';
+      }
+  });
+});
+

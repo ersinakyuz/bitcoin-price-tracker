@@ -10,5 +10,12 @@
     },
      "updateInterval": {
         "message": "Update Interval (seconds):"
-    }
+    },
+    "notifyToggle": {
+       "message": "Enable Notifications:"
+   },
+   "notifications": {
+      "message": "Notifications"
+  }
+   
 }

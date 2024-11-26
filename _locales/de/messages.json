@@ -10,5 +10,12 @@
     },
     "updateInterval": {
        "message": "Aktualisierungsintervall (Sekunden):"
-   }
+   },
+   "notifyToggle": {
+      "message": "Aktivieren von Benachrichtigungen"
+  },
+  "notifications": {
+     "message": "Benachrichtigungen"
+ }
+  
 }
